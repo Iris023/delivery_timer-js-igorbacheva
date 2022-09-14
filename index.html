@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your pizza is on the way!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@500&family=Mukta:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="footer">
+        <img class="logo" src="logo.png" alt="logo">
+        <p class="logoText"><span class="otherColor">i</span>Pizza</p>
+    </div>
+
+    <div class="center">
+        <h1 id="thanks" class="glow">Thanks for your order! ♡</h1>
+    </div>
+
+    <div class="center">
+        <h2 id="guarantee">We aim to deliver in 30 mins*</h2>
+    </div>
+    
+    <div class="center">
+        <h6 id="displayTime">Wait</h6>
+    </div>
+    
+
+    <div class="center">
+        <h3 id="footnote">*Otherwise you'll receive our $10 delivery voucher code</h3>
+    </div>
+
+    <audio  id="melody" loop src="waiting-song.mp3"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
