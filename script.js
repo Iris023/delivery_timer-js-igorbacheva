@@ -7,7 +7,7 @@ thanks.addEventListener ('click', ()=>{
     return waitingSong.paused? waitingSong.play() : waitingSong.pause();
 })
 
-const deliveryTime = 0.1;
+const deliveryTime = 0.3;
 let deliveryTimeInSeconds = deliveryTime * 60;
 
 function timer() {
