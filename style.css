@@ -54,6 +54,10 @@ body{
     animation: glow 1s ease-in-out infinite alternate;
 }
 
+.seconds {
+    margin-left: 30px;
+}
+
 .contactUs {
     text-decoration: none;
     color: #fff;
@@ -67,7 +71,6 @@ body{
     from {
         text-shadow: 0 0 10px #FF9B6A, 0 0 20px #FF9B6A, 0 0 30px #FF9B6A, 0 0 40px #FF9B6A, 0 0 50px #FF9B6A, 0 0 60px #FF9B6A, 0 0 70px #fc7a3a;
     }
-    
     to {
         text-shadow: 0 0 20px #FF9B6A, 0 0 30px #FF9B6A, 0 0 40px #FF9B6A, 0 0 50px #FF9B6A, 0 0 60px #FF9B6A, 0 0 70px #FF9B6A, 0 0 80px #fc7a3a;
     }
@@ -78,7 +81,6 @@ body{
     font-size: 43px;
     margin-top: 55px;
     padding: 0 30px 0 30px;
-
 }
 
 #footnote {
@@ -137,15 +139,19 @@ body{
     font-size: 66px;
     }
 
+    #displayTime {
+        font-size: 130px;
+    }
+
     #swal2-html-container {
-        font-size: 30px;
+        font-size: 25px !important;
     }
     .swal2-title{
-        font-size: 38px !important;
+        font-size: 35px !important;
     }
 
     .swal2-confirm, .swal2-deny {
-        font-size: 28px !important;
+        font-size: 23px !important;
     }
 }
 
@@ -159,17 +165,20 @@ body{
     }
     
     #swal2-html-container {
-        font-size: 24px;
+        font-size: 22px !important;
     }
     .swal2-title{
-        font-size: 33px !important;
+        font-size: 30px !important;
     }
 
     .swal2-confirm, .swal2-deny {
         font-size: 19px !important;
     }
 
-    
+    .swal2-popup {
+        width: 25em !important;
+    }
+
     #guarantee {
         font-size: 28px;
         width: 90%;
@@ -181,6 +190,7 @@ body{
         height: 120px;
         margin-top: -30px;
     }
+    
     #footnote {
         font-size: 19px;
     }

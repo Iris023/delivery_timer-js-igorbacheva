@@ -7,7 +7,7 @@ thanks.addEventListener ('click', ()=>{
     return waitingSong.paused? waitingSong.play() : waitingSong.pause();
 })
 
-const deliveryTime = 0.7;
+const deliveryTime = 0.1;
 let deliveryTimeInSeconds = deliveryTime * 60;
 
 function timer() {
@@ -23,7 +23,7 @@ function timer() {
     }
 
     let displayTime = document.querySelector('#displayTime');
-        displayTime.textContent = `${displayMinutes} :${displaySeconds}`;
+        displayTime.innerHTML = `${displayMinutes} :<span class="seconds">${displaySeconds}</span>`;
         deliveryTimeInSeconds--;
 
     if (deliveryTimeInSeconds < 0) {
@@ -40,7 +40,7 @@ function timer() {
                 title: `Time is up!`,
                 text: `If you haven't got your pizza yet, contact us to get a code`,
                 showDenyButton: true,
-                denyButtonColor: 'darkseagreen',
+                denyButtonColor: '#5ea85e',
                 denyButtonText:'No need',
                 confirmButtonColor: '#FF5151',
                 confirmButtonText: `<a class="contactUs" href="mailto:service@ipizza.com?body=Hello! I haven't got my pizza in time. My order number is...">Contact us</a>`,
